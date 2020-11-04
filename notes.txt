@@ -1,0 +1,32 @@
+<div className="col-span-2">
+                        <table className=" border-2 ">
+                            <thead>
+
+                            </thead>
+                            <tbody>
+                                {
+                                    questions.map(item => (
+                                        <tr key={item}><td className="border border-gray-400 px-4 py-2">{item}</td></tr>
+
+                                    ))
+
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className="col-span-1 self-stretch bg-orange-600">
+                        <div className="grid grid-rows-6">
+                                {
+                                    answers.map(item2 => (
+                                       
+                                        <div className="row-span-1 justify-self-stretch">{
+                                                item2 == "1" ? "Buena" : "Mala"
+                                            }</div>
+                                       
+                                    ))
+                                }
+                        </div>        
+
+                          
+                        
+                    </div>
